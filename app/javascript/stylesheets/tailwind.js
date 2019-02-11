@@ -225,17 +225,21 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
+    'brand': [
+      'Gibson-Regular',
+      'sans-serif'
+    ],
+    'brand-semibold': [
+      'Gibson-SemiBold',
+      'sans-serif'
+    ],
+    'brand-italic': [
+      'Gibson-Italic',
+      'sans-serif'
+    ],
+    'brand-bold': [
+      'Gibson-Bold',
+      'sans-serif'
     ],
     'mono': [
       'Menlo',
