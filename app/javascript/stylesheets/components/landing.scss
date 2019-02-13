@@ -1,8 +1,28 @@
 .bg-hero {
-  background: linear-gradient(120deg, #3957F4 23%, #2F87EE 90%);
   height: 512px;
 
   @media screen and (max-width: 992px) {
     height: auto;
+  }
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(120deg, #3957F4 23%, #2F87EE 90%);
+}
+
+.cta-bg-image {
+  overflow: hidden;
+  width: 340px;
+  height: 436px;
+  right: 0;
+  top: -25px;
+  background: url('../images/jumpstart-mark-blue.png') no-repeat center center;
+  background-size: 335px 474px;
+  position: absolute;
+  z-index: 1;
+
+  @media screen and (max-width: 992px) {
+    top: auto;
+    bottom: -15px;
   }
 }
