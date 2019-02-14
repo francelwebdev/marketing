@@ -1,0 +1,20 @@
+<%
+  date ||= ""
+  title ||= ""
+  description ||= ""
+  type ||= ""
+%>
+
+<div class="flex flex-wrap release-note mb-8 pb-8 border-b border-grey-light">
+  <div class="lg:w-24 w-full lg:mb-0 mb-2">
+    <p class="uppercase text-grey-darker font-brand-semibold text-sm tracking-wide"><%= date %></p>
+  </div>
+  <div class="lg:flex-1 w-full">
+    <div class="flex flex-wrap items-center">
+      <div class="rounded-full leading-tight h-6 px-2 bg-transparent border-2 text-xs inline-flex items-center  font-brand-semibold leading-normal uppercase <%= type == "Update" ? "text-orange border-orange" : "text-secondary border-secondary border-box" %>"><%= type %></div>
+      <p class="font-brand-semibold text-grey-darkest ml-2"><%= title %></p>
+
+    </div>
+    <p class="mt-2 leading-normal text-grey-darkest"><%= description %></p>
+  </div>
+</div>

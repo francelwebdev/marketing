@@ -26,3 +26,25 @@
     bottom: -15px;
   }
 }
+
+.release-note {
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    border: 0;
+  }
+}
+
+.team-bg {
+  background-color: #3a3b48;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  transition: ease .3s all;
+
+  &:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+}
