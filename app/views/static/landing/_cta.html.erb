@@ -4,7 +4,7 @@
     <h3 class="font-brand-light lg:text-4xl text-3xl mb-1 leading-tight">Take your idea to the next level. Try Jumpstart.</h3>
     <p class="text-xl leading-normal mb-6">Just <span class="font-brand-semibold"><%= number_to_currency(Utils::SINGLE_LICENSE_PRICE, strip_insignificant_zeros: true) %></span> per site. <span class="font-brand-semibold"><%= number_to_currency(Utils::UNLIMITED_LICENSE_PRICE, strip_insignificant_zeros: true) %></span> for unlimited sites.</p>
 
-    <%= link_to pricing_path, class: "btn btn-secondary btn-large items-center justify-between px-8 lg:py-4" do %>
+    <%= link_to pricing_path, class: "btn btn-secondary btn-large items-center justify-between text-base px-8 lg:py-4" do %>
       Jumpstart your next app <%= render_svg "icons/bolt", styles: "fill-current text-white icon lg:ml-2 lg:block hidden" %>
     <% end %>
   </div>
