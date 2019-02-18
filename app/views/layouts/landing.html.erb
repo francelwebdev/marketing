@@ -18,10 +18,10 @@
   </head>
 
   <body class="bg-offwhite font-brand font-normal leading-normal h-full antialiased">
+    <%= render partial: "shared/flash" %>
     <%= render partial: "shared/landing-hero" %>
 
     <div class="main">
-      <%= render partial: "shared/flash" %>
       <%= yield %>
     </div>
 
