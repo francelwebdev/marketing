@@ -17,3 +17,8 @@ module JumpstartApp
     # the framework and any gems in your application.
   end
 end
+
+require 'ostruct'
+APP = OpenStruct.new({
+  enable_pro: true,
+});

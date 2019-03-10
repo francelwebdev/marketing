@@ -1,12 +1,18 @@
 <div class="container m-auto text-white lg:flex block items-start justify-between lg:pt-8 pt-4 lg:px-0 px-4 text-center lg:text-left">
   <div class="mb-6 lg:mb-0 lg:w-auto w-full lg:pt-8 pt-4 flex-shrink-o">
-    <%= link_to "#", class: "no-underline text-white flex flex-wrap items-center lg:justify-start justify-center mb-4" do %>
-      <span class="rounded-full px-3 bg-secondary text-xs inline-flex items-center justify-center text-white font-brand-semibold leading-loose uppercase mr-4 lg:-mt-1">New</span>
-      <div class="text-sm font-brand-semibold lg:mt-0 mt-2 uppercase tracking-wider font-normal flex lg:items-center items-start">Learn what's new in Jumpstart 1.1</div>
+    <% if APP.enable_pro? %>
+      <%= link_to "#", class: "no-underline text-white flex flex-wrap items-center lg:justify-start justify-center mb-4" do %>
+        <span class="rounded-full px-3 bg-secondary text-xs inline-flex items-center justify-center text-white font-brand-semibold leading-loose uppercase mr-4 lg:-mt-1">New</span>
+        <div class="text-sm font-brand-semibold lg:mt-0 mt-2 uppercase tracking-wider font-normal flex lg:items-center items-start">Learn what's new in Jumpstart 1.1</div>
+      <% end %>
     <% end %>
 
     <h2 class="lg:text-5xl text-4xl pt-2 lg:mb-2 font-brand-light">Build great ideas faster</h2>
     <p class="lg:max-w-sm w-full lg:text-2xl text-xl leading-normal">Jumpstart is the perfect starting point for your next Ruby on Rails app. Skip the boilerplate setup and build your app faster.</p>
+
+    <% unless APP.enable_pro? %>
+      <a href="#getnotified" class="btn btn-secondary mt-6">Subscribe to get notified</a>
+    <% end %>
   </div>
   <div class="lg:w-auto w-full animated fadeIn">
     <%= render "static/landing/hero-graphic" %>

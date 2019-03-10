@@ -17,6 +17,7 @@
         <%= render "shared/left_nav" %>
       </div>
 
+      <% if APP.enable_pro? %>
       <div class="flex-1 lg:flex hidden justify-end flex-wrap items-center">
         <%= link_to "Pricing", pricing_path, class: "nav-link text-white hover:text-grey-lighter" if not_subscribed? %>
 
@@ -56,12 +57,17 @@
               </div>
             </div>
           </div>
-
         <% else %>
           <%= link_to 'Log In', new_user_session_path, class: 'nav-link text-white hover:text-grey-lighter' %>
           <%= link_to 'Get Jumpstart', new_user_registration_path, class: 'btn btn-secondary' %>
         <% end %>
       </div>
+      <% else %>
+   <%= link_to "http://twitter.com/share?text=I just signed up to learn more about Jumpstart Pro by @excid3, @jmcharnes, and @justalever&url=https://jumpstartrails.com&hashtags=rails,rubyonrails,ruby", class: "inline-flex items-center text-base font-semibold line-height-normal relative no-underline text-white hover:opacity-75" do %>
+          <%= render_svg 'icons/twitter', title: "Twitter", styles: "icon fill-current mr-2" %> <span class="uppercase text-sm tracking-wide font-brand-semibold font-normal">Tweet this</span>
+        <% end %>
+
+      <% end %>
 
       <div class="block lg:hidden ml-4">
         <button class="flex items-center px-3 py-2 border rounded text-grey-lighter border-grey-light hover:text-white hover:border-white">

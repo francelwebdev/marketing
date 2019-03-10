@@ -23,6 +23,8 @@ import "src/confirm"
 import "src/forms"
 import "src/timezone"
 
+import "src/smoothscroll"
+
 import tippy from 'tippy.js'
 document.addEventListener("turbolinks:load", () => {
   tippy(document.querySelectorAll('[data-tooltip]'))
