@@ -75,6 +75,7 @@ gem 'administrate', github: 'excid3/administrate' #'~> 0.10.0'
 gem 'image_processing', '~> 1.2'
 gem 'name_of_person', '~> 1.0'
 gem 'turbolinks_render', '~> 0.9.12'
+gem 'pagy', '~> 2.1', '>= 2.1.4'
 
 # We always want the latest versions of these gems, so no version numbers
 gem 'strong_migrations'

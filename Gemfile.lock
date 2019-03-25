@@ -248,6 +248,7 @@ GEM
       omniauth-oauth (~> 1.1)
       rack
     orm_adapter (0.5.0)
+    pagy (2.1.4)
     pay (1.0.0.beta3)
       rails (>= 4.2)
       rails-html-sanitizer (~> 1.0.4)
@@ -386,6 +387,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-github
   omniauth-twitter
+  pagy (~> 2.1, >= 2.1.4)
   pay (~> 1.0.0.beta3)
   pg
   pry-rails
