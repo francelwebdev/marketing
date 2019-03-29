@@ -1,21 +1,19 @@
-<div class="bg-offwhite border-t border-grey-light py-1 lg:px-6 px-4 w-full lg:h-16 h-auto">
-  <div class="flex lg:flex-row lg:flex-row flex-col flex-col-reverse flex-wrap lg:items-center items-start justify-between">
-    <div class="flex items-center lg:justify-start justify-between">
-      <%= link_to root_path do %>
-        <%= render_svg 'jumpstart-mark', styles: "fill-current text-grey-darker hover:text-grey-darkest" %>
-      <% end %>
-      <div class="ml-4 text-grey-darker text-sm flex-no-shrink">© <%= Date.current.year %> <%= Jumpstart.config.business_name %></div>
+<div class="bg-offwhite border-t border-grey-light flex items-center flex-wrap lg:px-6 px-4 w-full  h-auto pt-2">
+    <div class="lg:flex block items-center justify-between text-center flex-wrap flex-1">
+      <%= link_to "🚀 Deploy your app with Hatchbox", "https://hatchbox.io", target: "_blank", class: "text-grey-darker no-underline block lg:my-0 my-6 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
+
+      <%= link_to "💎 Ruby on Rails Screencasts", "https://gorails.com", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
+
+      <%= link_to "🎧 Listen to Remote Ruby", "https://www.remoteruby.net", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block my-6 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
+      <%= link_to "🛤 Attend Southeast Ruby", "https://southeastruby.com", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
+
+      <%= link_to "👨🏼‍💻 Learn Ruby on Rails from Scratch", "https://hellorails.io", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
     </div>
-    <div class="lg:flex flex-1 block flex-wrap lg:justify-end items-center">
-      <%= link_to "🚀 Deploy your app with Hatchbox", "https://hatchbox.io", target: "_blank", class: "text-grey-darker no-underline block lg:my-0 my-6 lg:px-4 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
-
-      <%= link_to "💎 Ruby on Rails Screencasts", "https://gorails.com", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 lg:px-4 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
-
-      <%= link_to "🎧 Listen to Remote Ruby", "https://www.remoteruby.net", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block my-6 lg:px-4 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
-
-      <%= link_to "🛤 Attend Southeast Ruby", "https://southeastruby.com", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 lg:px-4 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
-
-      <%= link_to "👨🏼‍💻 Learn Ruby on Rails from Scratch", "https://hellorails.io", target: "_blank", class: "text-grey-darker hover:text-grey-darkest no-underline block lg:my-0 my-6 lg:pl-4 hover:text-grey-darkest lg:text-base text-lg", rel:"noopener noreferrer" %>
-    </div>
+  </div>
+  <div class="flex items-center justify-center bg-grey-lighter py-3 mt-2 border-t border-grey-light">
+    <%= link_to root_path do %>
+      <%= render_svg 'jumpstart-mark', styles: "fill-current text-grey-darker hover:text-grey-darkest" %>
+    <% end %>
+    <div class="ml-4 text-grey-darker text-sm flex-no-shrink">© <%= Date.current.year %> <%= Jumpstart.config.business_name %></div>
   </div>
 </div>
